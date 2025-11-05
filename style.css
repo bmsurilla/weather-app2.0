@@ -20,6 +20,7 @@ body {
 }
 #search-bar {
   text-align: center;
+  min-width: 300px;
 }
 #city-input {
   font-size: 19.1px;
@@ -49,11 +50,11 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   max-width: 50%;
   min-width: 600px;
-  padding: 25px 25px;
+  padding: 0px 25px 30px;
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
-  max-height: 300px;
+  max-height: 225px;
 }
 .current-temp {
   position: relative;
@@ -82,19 +83,13 @@ body {
 #current-temp-description {
   position: relative;
   bottom: 15px;
-  font-weight: bolder;
-  color: #717171;
-}
-#current-temp-hi-lo {
-  position: relative;
-  bottom: 25px;
   color: #717171;
 }
 
 .current-city {
   position: relative;
   left: 65%;
-  bottom: 150px;
+  bottom: 125px;
   right: 0px;
   width: fit-content;
 }
@@ -106,7 +101,7 @@ body {
 #date {
   color: #717171;
   position: relative;
-  bottom: 20px;
+  bottom: 15px;
 }
 #current-divider {
   position: relative;
@@ -123,4 +118,30 @@ body {
   bottom: 130px;
   max-width: 750px;
   text-align: center;
+}
+
+#footer-container {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 50%;
+  min-width: 600px;
+  padding: 1px 25px;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-height: 65px;
+}
+#signature {
+  position: relative;
+  bottom: 10px;
+}
+a {
+  color: #805b65;
+  transition: 200ms ease-in-out;
+}
+a:hover {
+  color: #bba09c;
+  font-weight: bolder;
 }
