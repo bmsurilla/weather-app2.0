@@ -2,14 +2,14 @@ function displayTemp(response) {
   let tempValue = document.querySelector("#current-temp-value");
   let actualTemp = Math.round(response.data.temperature.current);
   tempValue.innerHTML = actualTemp;
+  let currentCity = document.querySelector("#city");
+  currentCity.innerHTML = response.data.city;
 }
 
 function changeCity(event) {
   event.preventDefault();
   let newCity = document.querySelector("#city-input");
   let updateCity = newCity.value;
-  let currentCity = document.querySelector("#city");
-  currentCity.innerHTML = updateCity;
 
   let apiKey = "bab44a6ef3at298bof0b63093865ccef";
   let units = "metric";
