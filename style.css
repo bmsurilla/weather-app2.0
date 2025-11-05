@@ -54,7 +54,7 @@ body {
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
-  max-height: 225px;
+  max-height: 235px;
 }
 .current-temp {
   position: relative;
@@ -85,11 +85,14 @@ body {
   bottom: 15px;
   color: #717171;
 }
+#current-temp-condition {
+  font-weight: bolder;
+}
 
 .current-city {
   position: relative;
   left: 65%;
-  bottom: 125px;
+  bottom: 100px;
   right: 0px;
   width: fit-content;
 }
@@ -105,7 +108,7 @@ body {
 }
 #current-divider {
   position: relative;
-  bottom: 150px;
+  bottom: 110px;
   background-color: #717171;
 }
 .extras {
@@ -115,7 +118,7 @@ body {
   list-style-type: none;
   padding: 0;
   position: relative;
-  bottom: 130px;
+  bottom: 100px;
   max-width: 750px;
   text-align: center;
 }

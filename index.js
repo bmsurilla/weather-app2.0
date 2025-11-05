@@ -4,6 +4,23 @@ function displayTemp(response) {
   tempValue.innerHTML = actualTemp;
   let currentCity = document.querySelector("#city");
   currentCity.innerHTML = response.data.city;
+
+  let tempDescription = document.querySelector("#current-temp-condition");
+  let actualDescription = response.data.condition.description;
+  tempDescription.innerHTML = actualDescription;
+
+  let extrasHumidity = document.querySelector("#extras-humidity");
+  let actualHumidity = response.data.temperature.humidity;
+  extrasHumidity.innerHTML = `${actualHumidity}%`;
+
+  let extrasWind = document.querySelector("#extras-wind");
+  let actualWind = response.data.wind.speed;
+  extrasWind.innerHTML = `${actualWind} m/s`;
+
+  let extrasFeels = document.querySelector("#extras-feels");
+  let actualFeels = Math.round(response.data.temperature.feels_like);
+  console.log(actualFeels);
+  extrasFeels.innerHTML = `${actualFeels}°C`;
 }
 
 function changeCity(event) {
