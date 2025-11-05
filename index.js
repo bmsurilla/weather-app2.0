@@ -1,9 +1,21 @@
+function displayTemp(response) {
+  let tempValue = document.querySelector("#current-temp-value");
+  let actualTemp = Math.round(response.data.temperature.current);
+  tempValue.innerHTML = actualTemp;
+}
+
 function changeCity(event) {
   event.preventDefault();
   let newCity = document.querySelector("#city-input");
   let updateCity = newCity.value;
   let currentCity = document.querySelector("#city");
   currentCity.innerHTML = updateCity;
+
+  let apiKey = "bab44a6ef3at298bof0b63093865ccef";
+  let units = "metric";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${updateCity}&key=${apiKey}&units=${units}`;
+
+  axios.get(apiUrl).then(displayTemp);
 }
 
 function formatDate() {
@@ -58,6 +70,5 @@ let searchCity = document.querySelector("#search-bar");
 searchCity.addEventListener("submit", changeCity);
 searchCity.addEventListener("submit", formatDate);
 formatDate();
-// format date
 
 //add api (temp, high, low, humidity, wind, feels like, city, description)
