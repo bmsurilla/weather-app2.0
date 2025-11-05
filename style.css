@@ -10,6 +10,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
+
 #title {
   font-size: 50px;
   text-align: center;
@@ -28,7 +29,6 @@ body {
   border: 2px solid #bba09c;
   color: black;
 }
-
 #search {
   background-color: #f1dcd7;
   border: 2px solid #bba09c;
@@ -37,7 +37,6 @@ body {
   transition: 200ms ease-in-out;
   font-size: 19.1px;
 }
-
 #search:hover {
   background-color: #bba09c;
   border: 2px solid #f1dcd7;
@@ -50,8 +49,64 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   max-width: 50%;
   min-width: 600px;
-  padding: 25px 30px;
+  padding: 25px 25px;
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.current-temp {
+  position: relative;
+  top: 20px;
+  left: 25px;
+  margin: 0px 0px;
+}
+#current-temp-value {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+#current-temp-unit {
+  font-weight: 400;
+  font-size: 30.9px;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+  margin: 0 auto;
+}
+#current-temp-icon {
+  font-size: 50px;
+  position: relative;
+  right: 10px;
+}
+#current-temp-description {
+  position: relative;
+  bottom: 15px;
+  font-weight: bolder;
+  color: #717171;
+}
+#current-temp-hi-lo {
+  position: relative;
+  bottom: 25px;
+  color: #717171;
+}
+
+.current-city {
+  position: relative;
+  left: 70%;
+  bottom: 120px;
+}
+#city {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0 auto;
+}
+#date {
+  color: #717171;
+  position: relative;
+  bottom: 20px;
+}
+#current-divider {
+  position: relative;
+  bottom: 120px;
+  background-color: #717171;
 }
