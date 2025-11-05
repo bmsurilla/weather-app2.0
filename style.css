@@ -4,3 +4,14 @@
   font-weight: <weight>;
   font-style: normal;
 }
+body {
+  font-family: "quicksand";
+  background-image: url("https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2t5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#title {
+  text-align: center;
+  font-weight: bold;
+  color: #717171;
+}
