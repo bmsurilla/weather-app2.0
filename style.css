@@ -7,7 +7,6 @@
 body {
   font-family: "quicksand";
   background-image: url("https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2t5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600");
-  background-repeat: repeat;
   background-size: cover;
   font-size: 19.1px;
 }
@@ -96,6 +95,8 @@ body {
   position: relative;
   left: 65%;
   bottom: 150px;
+  right: 0px;
+  width: fit-content;
 }
 #city {
   font-weight: 400;
