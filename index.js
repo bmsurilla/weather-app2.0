@@ -87,5 +87,3 @@ let searchCity = document.querySelector("#search-bar");
 searchCity.addEventListener("submit", changeCity);
 searchCity.addEventListener("submit", formatDate);
 formatDate();
-
-//add api (temp, high, low, humidity, wind, feels like, city, description)
