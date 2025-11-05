@@ -11,7 +11,15 @@ body {
   background-size: cover;
 }
 #title {
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
-  color: #717171;
+  color: #805b65;
+  text-shadow: #717171 1px 0 15px;
+}
+#search-bar {
+  text-align: center;
+}
+#city-input {
+  font-size: 19.1px;
 }
