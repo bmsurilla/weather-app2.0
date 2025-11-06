@@ -10,10 +10,8 @@ function displayTemp(response) {
   tempDescription.innerHTML = actualDescription;
 
   let tempIcon = document.querySelector("#current-temp-icon");
-  let actualIcon = response.data.condition.icon;
-  let iconUrl = `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${actualIcon}`;
-  tempIcon.src = iconUrl;
-  console.log(tempIcon);
+  let actualIcon = `<img src="${response.data.condition.icon_url}/>`;
+  tempIcon.innerHTML = actualIcon;
 
   let extrasHumidity = document.querySelector("#extras-humidity");
   let actualHumidity = response.data.temperature.humidity;
