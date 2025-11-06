@@ -59,8 +59,9 @@ body {
 .current-temp {
   position: relative;
   top: 20px;
-  left: 25px;
+  left: 65px;
   margin: 0px 0px;
+  padding: 0px 45px;
 }
 #current-temp-value {
   position: relative;
