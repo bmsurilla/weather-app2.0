@@ -9,6 +9,12 @@ function displayTemp(response) {
   let actualDescription = response.data.condition.description;
   tempDescription.innerHTML = actualDescription;
 
+  let tempIcon = document.querySelector("#current-temp-icon");
+  let actualIcon = response.data.condition.icon;
+  let iconUrl = `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${actualIcon}`;
+  tempIcon.src = iconUrl;
+  console.log(tempIcon);
+
   let extrasHumidity = document.querySelector("#extras-humidity");
   let actualHumidity = response.data.temperature.humidity;
   extrasHumidity.innerHTML = `${actualHumidity}%`;
@@ -19,7 +25,6 @@ function displayTemp(response) {
 
   let extrasFeels = document.querySelector("#extras-feels");
   let actualFeels = Math.round(response.data.temperature.feels_like);
-  console.log(actualFeels);
   extrasFeels.innerHTML = `${actualFeels}°C`;
 }
 
