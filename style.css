@@ -132,47 +132,18 @@ body {
 #forecast-container {
   display: block;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.781);
   max-width: 50%;
   min-width: 600px;
   padding: 10px 25px 30px;
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
-  max-height: 300px;
+  max-height: 500px;
 }
 h3 {
   position: relative;
   left: 35px;
-}
-.forcast-block {
-  display: flex;
-  justify-content: space-around;
-  background-color: #9bb1bb55;
-  min-width: 550px;
-  margin: 0px 25px;
-  border-radius: 30px;
-  max-height: 65px;
-  padding: 10px 0px;
-  color: #717171;
-}
-.forecast-day {
-  font-weight: bolder;
-}
-.forecast-icon {
-  position: relative;
-  right: 10px;
-}
-.forecast-description {
-  position: relative;
-  left: 10px;
-}
-.forecast-high {
-  font-weight: bolder;
-  color: #805b65;
-}
-.forecast-low {
-  color: #9bb1bb;
 }
 
 #footer-container {
