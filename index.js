@@ -10,8 +10,8 @@ function displayTemp(response) {
   tempDescription.innerHTML = actualDescription;
 
   let tempIcon = document.querySelector("#current-temp-icon");
-  let actualIcon = `<img src="${response.data.condition.icon_url}/>`;
-  tempIcon.innerHTML = actualIcon;
+  let actualIcon = response.data.condition.icon_url;
+  tempIcon.src = actualIcon;
 
   let extrasHumidity = document.querySelector("#extras-humidity");
   let actualHumidity = response.data.temperature.humidity;
