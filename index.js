@@ -14,8 +14,8 @@ function displayTemp(response) {
   extrasHumidity.innerHTML = `${actualHumidity}%`;
 
   let extrasWind = document.querySelector("#extras-wind");
-  let actualWind = response.data.wind.speed;
-  extrasWind.innerHTML = `${actualWind} m/s`;
+  let actualWind = (response.data.wind.speed * 3.6).toFixed(1);
+  extrasWind.innerHTML = `${actualWind} km/h`;
 
   let extrasFeels = document.querySelector("#extras-feels");
   let actualFeels = Math.round(response.data.temperature.feels_like);
