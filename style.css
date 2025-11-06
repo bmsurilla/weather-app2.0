@@ -54,7 +54,7 @@ body {
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
-  max-height: 235px;
+  max-height: 300px;
 }
 .current-temp {
   position: relative;
@@ -63,6 +63,8 @@ body {
   margin: 0px 0px;
 }
 #current-temp-value {
+  position: relative;
+  top: 5px;
   font-size: 50px;
   font-weight: 400;
   margin: 0 auto;
@@ -71,19 +73,20 @@ body {
   font-weight: 400;
   font-size: 30.9px;
   position: relative;
-  bottom: 15px;
+  bottom: 10px;
   right: 5px;
   margin: 0 auto;
 }
 #current-temp-icon {
-  font-size: 50px;
   position: relative;
-  right: 10px;
+  right: 20px;
+  top: 40px;
 }
 #current-temp-description {
   position: relative;
-  bottom: 15px;
+  bottom: 10px;
   color: #717171;
+  font-size: 19.1px;
 }
 #current-temp-condition {
   font-weight: bolder;
@@ -121,6 +124,7 @@ body {
   bottom: 100px;
   max-width: 750px;
   text-align: center;
+  margin-top: 15px;
 }
 
 #footer-container {
