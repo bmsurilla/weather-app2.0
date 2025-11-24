@@ -172,3 +172,34 @@ a:hover {
   color: #bba09c;
   font-weight: bolder;
 }
+.forecast-element {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 20px;
+}
+.forecast-day {
+  font-weight: bolder;
+  text-align: center;
+  color: #717171;
+}
+.forecast-icon {
+  display: flex;
+  width: 75px;
+}
+.forecast-description {
+  text-align: center;
+  color: #717171;
+}
+.forecast-temp {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.forecast-high {
+  color: #805b65;
+  padding-right: 5px;
+}
+.forecast-low {
+  color: #9bb1bb;
+  padding-left: 5px;
+}
