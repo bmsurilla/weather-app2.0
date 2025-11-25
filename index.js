@@ -24,6 +24,8 @@ function displayTemp(response) {
   let extrasFeels = document.querySelector("#extras-feels");
   let actualFeels = Math.round(response.data.temperature.feels_like);
   extrasFeels.innerHTML = `${actualFeels}°C`;
+
+  getForecast(response.data.city);
 }
 
 function changeCity(event) {
@@ -86,7 +88,17 @@ function formatDate() {
   time.innerHTML = `${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "bab44a6ef3at298bof0b63093865ccef";
+  let units = "metric";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastBlock = document.querySelector("#forecast");
   let forecastHtml = "";
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -113,4 +125,3 @@ let searchCity = document.querySelector("#search-bar");
 searchCity.addEventListener("submit", changeCity);
 searchCity.addEventListener("submit", formatDate);
 formatDate();
-displayForecast();
