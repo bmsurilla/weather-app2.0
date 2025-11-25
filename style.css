@@ -174,8 +174,9 @@ a:hover {
 }
 .forecast-element {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0px 20px;
+  align-items: center;
 }
 .forecast-day {
   font-weight: bolder;
@@ -185,10 +186,13 @@ a:hover {
 .forecast-icon {
   display: flex;
   width: 75px;
+  padding-left: 100px;
 }
 .forecast-description {
-  text-align: center;
   color: #717171;
+  padding-right: 100px;
+  position: relative;
+  right: 35px;
 }
 .forecast-temp {
   display: flex;
