@@ -86,27 +86,31 @@ function formatDate() {
   time.innerHTML = `${hours}:${minutes}`;
 }
 
-// function displayForecast() {
-//   let forcastBlock = document.querySelector("#forecast");
-//   let forecastHtml = "";
-//   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+function displayForecast() {
+  let forecastBlock = document.querySelector("#forecast");
+  let forecastHtml = "";
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 
-//   days.forEach(function (day) {
-//     forecastHtml =
-//       forecastHtml +
-//       `<div class="forecast-day">${day}</div>
-//           <img class="forecast-icon" src="" alt="icon" />
-//           <div class="forecast-description"> Sunny</div>
-//           <div class="forecast-high">21°C </div
-//           ><div class="forecast-low">15°C</div>
-//         <hr class="forecast-divider"/>
-//         `;
-//   });
-//   forcastBlock.innerHTML = forecastHtml;
-// }
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-element">
+        <div class="forecast-day">${day}</div>
+        <img class="forecast-icon" src="" alt="icon" />
+        <div class="forecast-description">Sunny</div>
+        <div class="forecast-temp">
+          <div class="forecast-high">21°C </div>
+          <div class="forecast-low">15°C</div>
+        </div>
+      </div>
+        <br/>
+        `;
+  });
+  forecastBlock.innerHTML = forecastHtml;
+}
 
 let searchCity = document.querySelector("#search-bar");
 searchCity.addEventListener("submit", changeCity);
 searchCity.addEventListener("submit", formatDate);
 formatDate();
-// displayForecast();
+displayForecast();
